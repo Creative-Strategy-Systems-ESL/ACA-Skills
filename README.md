@@ -8,27 +8,30 @@ produce ACA's documents for a real brand.
 
 ---
 
-## ⛔ Read this before you install
-
-**Do not upload this repo's ZIP to Claude.** GitHub's green *Code → Download ZIP* button gives you
-a file whose contents are a folder, and Claude's skill upload needs a zip whose contents are a
-**skill**. It will be rejected, and it looks like the skills are broken when they are not.
-
-Use one of the two paths below instead. Both take the same download.
-
----
-
 ## Install in Claude (the web and desktop app)
 
-Claude's skill uploader takes **one skill at a time**, so this repo ships every skill pre-zipped
-and ready. No zipping, no renaming.
+**First, once:** open **Settings → Capabilities** and turn on **Code execution and file creation.**
+Skills do not run without it.
 
-1. **Download this repo.** Green **Code** button → **Download ZIP** → unzip it.
-2. In Claude, open **Settings → Capabilities** and turn on **Code execution and file creation.**
-   Skills do not run without it.
-3. Go to **Settings → Customize → Skills** and click **Add → Upload skill.**
-4. Open the **`install/`** folder from your download and pick a `.zip`. That is one skill installed.
-5. Repeat for each skill you want. Each takes a moment to pass a security scan before it is live.
+Then **Download this repo** — green **Code** button → **Download ZIP** → unzip it — and go to
+**Settings → Customize → Skills → Add → Upload skill.**
+
+From there, three things in the download will work. Try them in this order:
+
+| Try | What to give the uploader | If it works |
+|---|---|---|
+| **1** | The **`skills/`** folder, dragged in whole | All forty-four at once. It holds the skill folders and nothing else, so there is no stray file to trip on |
+| **2** | **`install/all-44-skills.zip`** | Same thing as one archive, if the uploader prefers a zip to a folder |
+| **3** | Any single `.zip` from **`install/`** | That one skill. Forty-four files, upload as many as you want |
+
+⚠️ **Option 3 is the one that is certain.** Each of those zips is a single skill with `SKILL.md` at
+its root, which is the documented shape. Options 1 and 2 depend on the uploader accepting a
+multi-skill drop — quick to find out, and worth trying first because it saves forty-three steps.
+
+⛔ **Whatever you do, do not upload the repo's own ZIP** — the `ACA-Skills-main.zip` that GitHub
+hands you. Its contents are a folder containing this README, so the uploader has nothing to read as
+a skill. It gets rejected, and it looks like the skills are broken when they are not. **Unzip it
+first**, then use the table above.
 
 ⭐ **You do not need all forty-four.** Each one works on its own — see below. Start with four or
 five that match what you actually do, and add more later.
@@ -44,7 +47,7 @@ available to everyone, so nobody else has to install anything.
 
 Faster, because all forty-four go in at once.
 
-Copy the `aca-*` folders from this repo into `.claude/skills/` — either in a project, or in
+Copy the folders inside **`skills/`** into `.claude/skills/` — either in a project, or in
 `~/.claude/skills/` to have them everywhere:
 
 ```
@@ -56,8 +59,9 @@ your-project/
         └── … 42 more
 ```
 
-⚠️ **Copy the `aca-*` folders themselves, not this whole repo folder.** Skills are found at exactly
-`.claude/skills/<skill-name>/SKILL.md`. Nested one level too deep, they load silently as nothing.
+⚠️ **Copy the `aca-*` folders themselves, not the `skills/` folder around them.** Skills are found
+at exactly `.claude/skills/<skill-name>/SKILL.md`. Nested one level too deep — as
+`.claude/skills/skills/aca-101-tribe-building/` — they load silently as nothing, with no error.
 
 Start a session and ask *"which ACA skills do I have?"* — you should get **44**.
 
@@ -120,8 +124,8 @@ see. A missing input gets a question, not a guess.
 
 | | |
 |---|---|
-| `aca-*/` | The 44 skills. Each is a `SKILL.md` plus a `reference/` folder |
-| `install/` | The same 44, pre-zipped one per file, for the Claude app uploader |
+| `skills/` | The 44 skills, and nothing else. Each is a `SKILL.md` plus a `reference/` folder |
+| `install/` | The same 44 pre-zipped one per file, plus `all-44-skills.zip` with every one in a single archive |
 | `SKILLS-README.md` | The full index: every skill, what it does, what it needs |
 
 Every skill carries a `reference/provenance.md` saying where its material came from and who taught
