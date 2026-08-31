@@ -13,25 +13,20 @@ produce ACA's documents for a real brand.
 **First, once:** open **Settings → Capabilities** and turn on **Code execution and file creation.**
 Skills do not run without it.
 
-Then **Download this repo** — green **Code** button → **Download ZIP** → unzip it — and go to
-**Settings → Customize → Skills → Add → Upload skill.**
+Then:
 
-From there, three things in the download will work. Try them in this order:
+1. **Download this repo.** Green **Code** button → **Download ZIP.**
+2. ⛔ **Unzip it.** This step is not optional — see the warning below.
+3. Go to **Settings → Customize → Skills → Add → Upload skill.**
+4. Give it the **`skills`** folder. That folder holds the forty-four skills and nothing else.
 
-| Try | What to give the uploader | If it works |
-|---|---|---|
-| **1** | The **`skills/`** folder, dragged in whole | All forty-four at once. It holds the skill folders and nothing else, so there is no stray file to trip on |
-| **2** | **`install/all-44-skills.zip`** | Same thing as one archive, if the uploader prefers a zip to a folder |
-| **3** | Any single `.zip` from **`install/`** | That one skill. Forty-four files, upload as many as you want |
+⛔ **Do not upload the ZIP GitHub gives you.** `ACA-Skills-main.zip` contains a folder holding this
+README, so the uploader has nothing to read as a skill. It gets rejected, and it looks like the
+skills are broken when they are not. Unzip first, then use the `skills` folder inside.
 
-⚠️ **Option 3 is the one that is certain.** Each of those zips is a single skill with `SKILL.md` at
-its root, which is the documented shape. Options 1 and 2 depend on the uploader accepting a
-multi-skill drop — quick to find out, and worth trying first because it saves forty-three steps.
-
-⛔ **Whatever you do, do not upload the repo's own ZIP** — the `ACA-Skills-main.zip` that GitHub
-hands you. Its contents are a folder containing this README, so the uploader has nothing to read as
-a skill. It gets rejected, and it looks like the skills are broken when they are not. **Unzip it
-first**, then use the table above.
+⚠️ **If the uploader will only take one skill at a time**, give it a single folder from inside
+`skills` — `aca-402-key-metrics`, say — or right-click that folder and compress it first. Each one
+is complete on its own.
 
 ⭐ **You do not need all forty-four.** Each one works on its own — see below. Start with four or
 five that match what you actually do, and add more later.
@@ -125,7 +120,6 @@ see. A missing input gets a question, not a guess.
 | | |
 |---|---|
 | `skills/` | The 44 skills, and nothing else. Each is a `SKILL.md` plus a `reference/` folder |
-| `install/` | The same 44 pre-zipped one per file, plus `all-44-skills.zip` with every one in a single archive |
 | `SKILLS-README.md` | The full index: every skill, what it does, what it needs |
 
 Every skill carries a `reference/provenance.md` saying where its material came from and who taught
