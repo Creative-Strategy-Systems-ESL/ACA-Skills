@@ -3,42 +3,29 @@
 **Forty-four Claude skills built from the Ad Creative Academy curriculum.** Every numbered course
 from the 100-Level to the 800-Level has one, plus one for each worksheet that produces something.
 
-Download this repo, install the skills, and Claude can teach the courses, run the worksheets, and
-produce ACA's documents for a real brand.
+Install them and Claude can teach the courses, run the worksheets, and produce ACA's documents for a
+real brand.
+
+**Pick your setup:** [Claude Code](#installing-to-claude-code) · [the Claude app](#installing-to-the-claude-app)
 
 ---
 
-## Install in Claude (the web and desktop app)
+## Installing to Claude Code
 
-**First, once:** open **Settings → Capabilities** and turn on **Code execution and file creation.**
-Skills do not run without it.
+**All forty-four in one command.** From the project you want them in:
 
-Then:
+```bash
+npx skills add Creative-Strategy-Systems-ESL/ACA-Skills
+```
 
-1. **Download this repo.** Green **Code** button → **Download ZIP**, and unzip it.
-2. Go to **Settings → Customize → Skills → Add → Upload skill.**
-3. Open any skill folder — `aca-402-key-metrics`, say — and **upload the `SKILL.md` inside it.**
-4. Repeat for each skill you want.
+That copies every skill into `.claude/skills/`. Start a session and ask *"which ACA skills do I
+have?"* — you should get **44**.
 
-**Every skill is a single file.** No zipping, no subfolders, nothing else to bring along. Each
-upload takes a minute or two to pass a security scan.
+### Or by hand
 
-⭐ **You do not need all forty-four.** Start with four or five that match what you actually do, and
-add more later. Each one works on its own — see below.
-
-### On a Team or Enterprise plan
-
-An owner can upload each skill once under **Organization settings → Skills** and it becomes
-available to everyone, so nobody else has to install anything.
-
----
-
-## Install in Claude Code
-
-Faster, because all forty-four go in at once.
-
-Copy the `aca-*` folders into `.claude/skills/` — either in a project, or in `~/.claude/skills/`
-to have them everywhere:
+Download the repo (green **Code** button → **Download ZIP**), unzip it, and copy the `aca-*` folders
+into `.claude/skills/` — either inside a project, or into `~/.claude/skills/` to have them
+everywhere:
 
 ```
 your-project/
@@ -49,52 +36,86 @@ your-project/
         └── … 42 more
 ```
 
-⚠️ **Keep them flat.** Skills are found at exactly `.claude/skills/<skill-name>/SKILL.md`. Nested
-one level too deep — as `.claude/skills/ACA-Skills-main/aca-101-tribe-building/` — they load
-silently as nothing, with no error.
-
-Start a session and ask *"which ACA skills do I have?"* — you should get **44**.
+⚠️ **Copy the `aca-*` folders themselves.** Skills are found at exactly
+`.claude/skills/<skill-name>/SKILL.md`. Nested one level too deep — as
+`.claude/skills/ACA-Skills-main/aca-101-tribe-building/` — they load silently as nothing, with no
+error message.
 
 ---
 
-## ⭐ Every skill works on its own
+## Installing to the Claude app
 
-This is the part people expect to be complicated, and it is not.
+**One skill per upload.** That is the app's rule, not a quirk of this repo: its uploader accepts a
+zip containing *exactly one* top-level folder and *exactly one* `SKILL.md`. No archive of several
+skills will ever go in, however it is packaged.
 
-- **No dependencies.** No skill needs another skill installed to work.
+So the skills come pre-zipped, one file each. Nothing to compress yourself.
+
+**First, once:** open **Settings → Capabilities** and turn on **Code execution and file creation.**
+Skills do not run without it.
+
+Then, for each skill you want:
+
+1. **Download the repo** — green **Code** button → **Download ZIP** — and unzip it.
+2. Open the **`install`** folder. It holds 44 zips, one per skill.
+3. In Claude, go to **Settings → Customize → Skills → Add → Upload skill.**
+4. Drag in one zip. Wait a minute or two for the security scan.
+5. Repeat for the next one.
+
+⛔ **Do not upload `ACA-Skills-main.zip`**, the file GitHub hands you. It holds the whole repo, so it
+fails the one-folder rule. Unzip it first and use the files in `install`.
+
+⭐ **You almost certainly do not want all forty-four.** Start with four or five that match what you
+actually do. Every skill works on its own, so there is no wrong subset —
+[`SKILLS-README.md`](SKILLS-README.md) describes each one.
+
+**A good first five:**
+
+| Skill | For |
+|---|---|
+| `aca-100-course-outline` | The map. Which course covers what |
+| `aca-103-creative-fundamentals` | The building blocks every ad is made of |
+| `aca-402-key-metrics` | Reading the numbers without overclaiming |
+| `aca-build-angles` | Angles for a real offer, across all ten types |
+| `aca-analyze-building-blocks` | Taking one ad apart |
+
+---
+
+## Every skill works on its own
+
+- **No dependencies.** No skill needs another skill installed.
 - **No order.** There is nothing to run first.
-- **No separate document to upload.** Everything a skill needs is in its one file.
+- **Nothing else to upload.** Everything a skill needs travels inside its own folder.
 
-Skills do mention each other — *"for that job, use `aca-402-key-metrics`"* — but only as a
-signpost. If you do not have the one it names, nothing breaks; you just do not have that one.
+Skills do mention each other — *"for that job, use `aca-402-key-metrics`"* — but only as a signpost.
+If you do not have the one it names, nothing breaks; you just do not have that one.
 
-Where two skills cover the same material, that is deliberate. `aca-103-creative-fundamentals` and
-`aca-build-angles` both carry the ten angle types **precisely so** neither has to depend on the
-other.
+Where two skills carry the same material that is deliberate. `aca-103-creative-fundamentals` and
+`aca-build-angles` both hold the ten angle types **precisely so** neither depends on the other.
 
-⚠️ **One exception.** `aca-100-course-outline` is the front door: its whole job is pointing you at
-the right course. On its own it will name skills you have not installed. Install it alongside
-others, not by itself.
+⚠️ **One exception.** `aca-100-course-outline` is the front door: its job is pointing you at the
+right course, so on its own it will name skills you have not installed. Install it alongside others.
 
 ---
 
 ## The three kinds of skill
 
-You can tell which is which from the name: a **number** after `aca-` means it follows a course, and
-a **verb** means it produces something.
+Tell them apart by name: a **number** after `aca-` means it follows a course, a **verb** means it
+produces something.
 
-| Kind | What it is for | What happens |
+| Kind | What it is for | What happens when it runs |
 |---|---|---|
-| **Teach** · 10 | Learning, and answering questions | Ask in plain words, get an answer straight away. It never makes you fill in a form first |
+| **Teach** · 10 | Learning, and answering questions | Ask in plain words, get an answer. It never makes you fill in a form first |
 | **Teach and do** · 17 | Learning by making the thing | Explains the method, asks what the document needs, then produces it |
 | **Do** · 17 | Getting the document made | No lesson. Tells you what it needs, asks for anything missing, hands back the finished worksheet |
 
-**`SKILLS-README.md`** in this repo lists all forty-four with what each one does, what it needs from
-you, and what it hands back.
+⭐ **The ones that produce documents ask questions first**, and they are built to refuse to invent:
+they will not make up a price, a customer count, a discount, or an ad they cannot see. A missing
+input gets a question, not a guess.
 
 ---
 
-## How to use them
+## Using them
 
 Skills load themselves when they are relevant, so mostly you just describe the problem:
 
@@ -104,23 +125,20 @@ Skills load themselves when they are relevant, so mostly you just describe the p
 
 Claude picks the matching skill. You can also name one directly.
 
-⭐ **The ones that produce documents will ask you questions first**, and they are built to refuse to
-invent: they will not make up a price, a customer count, a discount, or an ad they cannot actually
-see. A missing input gets a question, not a guess.
-
 ---
 
 ## What is in here
 
 | | |
 |---|---|
-| `aca-*/SKILL.md` | The 44 skills. One folder each, one self-contained file inside |
-| `SKILLS-README.md` | The full index: every skill, what it does, what it needs |
+| `aca-*/` | The 44 skills. Each is a `SKILL.md` plus a `reference/` folder |
+| `install/` | The same 44, pre-zipped one per file, for the Claude app |
+| `SKILLS-README.md` | The full index: every skill, what it does, what it needs, what it returns |
 
-Every skill ends with a **Provenance** section saying where its material came from and who taught
+Every skill carries a `reference/provenance.md` saying where its material came from and who taught
 it. Quotations are verbatim from ACA's own recordings and worksheets — including the transcription
-slips, which are flagged rather than silently corrected, so a quote can always be checked against
-the source.
+slips, which are flagged rather than silently corrected, so any quote can be checked against its
+source.
 
 ---
 
