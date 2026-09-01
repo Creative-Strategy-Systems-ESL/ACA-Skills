@@ -16,17 +16,23 @@ Skills do not run without it.
 Then:
 
 1. **Download this repo.** Green **Code** button → **Download ZIP.**
-2. ⛔ **Unzip it.** This step is not optional — see the warning below.
+2. ⛔ **Unzip it.** Not optional — see the warning below.
 3. Go to **Settings → Customize → Skills → Add → Upload skill.**
-4. Give it the **`skills`** folder. That folder holds the forty-four skills and nothing else.
+4. Drop the **`1-course-skills`** folder. That is 27 skills in one go.
+5. Do it again with **`2-worksheet-skills`**. That is the other 17.
+
+**Two uploads, forty-four skills.** Each takes a minute or two to pass a security scan.
+
+⛔ **Why two and not one:** the uploader accepts **200 files at most** per upload, and the full set
+is 209. The split is by kind rather than at an arbitrary halfway point, so each folder is a whole
+category — one skill per course, then one per worksheet.
 
 ⛔ **Do not upload the ZIP GitHub gives you.** `ACA-Skills-main.zip` contains a folder holding this
-README, so the uploader has nothing to read as a skill. It gets rejected, and it looks like the
-skills are broken when they are not. Unzip first, then use the `skills` folder inside.
+README, so there is nothing for the uploader to read as a skill. Unzip first, then drop the two
+folders inside.
 
-⚠️ **If the uploader will only take one skill at a time**, give it a single folder from inside
-`skills` — `aca-402-key-metrics`, say — or right-click that folder and compress it first. Each one
-is complete on its own.
+⚠️ **Want just one skill?** Drop a single folder from inside either one — `aca-402-key-metrics`,
+say. Each is complete on its own.
 
 ⭐ **You do not need all forty-four.** Each one works on its own — see below. Start with four or
 five that match what you actually do, and add more later.
@@ -42,7 +48,7 @@ available to everyone, so nobody else has to install anything.
 
 Faster, because all forty-four go in at once.
 
-Copy the folders inside **`skills/`** into `.claude/skills/` — either in a project, or in
+Copy the folders inside **`1-course-skills/`** and **`2-worksheet-skills/`** into `.claude/skills/` — either in a project, or in
 `~/.claude/skills/` to have them everywhere:
 
 ```
@@ -54,9 +60,10 @@ your-project/
         └── … 42 more
 ```
 
-⚠️ **Copy the `aca-*` folders themselves, not the `skills/` folder around them.** Skills are found
-at exactly `.claude/skills/<skill-name>/SKILL.md`. Nested one level too deep — as
-`.claude/skills/skills/aca-101-tribe-building/` — they load silently as nothing, with no error.
+⚠️ **Copy the `aca-*` folders themselves, not the two folders around them.** Skills are found at
+exactly `.claude/skills/<skill-name>/SKILL.md`. Nested one level too deep — as
+`.claude/skills/1-course-skills/aca-101-tribe-building/` — they load silently as nothing, with no
+error. Claude Code has no 200-file limit, so all forty-four go in together.
 
 Start a session and ask *"which ACA skills do I have?"* — you should get **44**.
 
@@ -119,7 +126,8 @@ see. A missing input gets a question, not a guess.
 
 | | |
 |---|---|
-| `skills/` | The 44 skills, and nothing else. Each is a `SKILL.md` plus a `reference/` folder |
+| `1-course-skills/` | 27 skills, one per ACA course. 146 files |
+| `2-worksheet-skills/` | 17 skills, one per worksheet that produces something. 63 files |
 | `SKILLS-README.md` | The full index: every skill, what it does, what it needs |
 
 Every skill carries a `reference/provenance.md` saying where its material came from and who taught
