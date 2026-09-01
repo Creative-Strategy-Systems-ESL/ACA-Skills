@@ -15,27 +15,16 @@ Skills do not run without it.
 
 Then:
 
-1. **Download this repo.** Green **Code** button → **Download ZIP.**
-2. ⛔ **Unzip it.** Not optional — see the warning below.
-3. Go to **Settings → Customize → Skills → Add → Upload skill.**
-4. Drop the **`1-course-skills`** folder. That is 27 skills in one go.
-5. Do it again with **`2-worksheet-skills`**. That is the other 17.
+1. **Download this repo.** Green **Code** button → **Download ZIP**, and unzip it.
+2. Go to **Settings → Customize → Skills → Add → Upload skill.**
+3. Open any skill folder — `aca-402-key-metrics`, say — and **upload the `SKILL.md` inside it.**
+4. Repeat for each skill you want.
 
-**Two uploads, forty-four skills.** Each takes a minute or two to pass a security scan.
+**Every skill is a single file.** No zipping, no subfolders, nothing else to bring along. Each
+upload takes a minute or two to pass a security scan.
 
-⛔ **Why two and not one:** the uploader accepts **200 files at most** per upload, and the full set
-is 209. The split is by kind rather than at an arbitrary halfway point, so each folder is a whole
-category — one skill per course, then one per worksheet.
-
-⛔ **Do not upload the ZIP GitHub gives you.** `ACA-Skills-main.zip` contains a folder holding this
-README, so there is nothing for the uploader to read as a skill. Unzip first, then drop the two
-folders inside.
-
-⚠️ **Want just one skill?** Drop a single folder from inside either one — `aca-402-key-metrics`,
-say. Each is complete on its own.
-
-⭐ **You do not need all forty-four.** Each one works on its own — see below. Start with four or
-five that match what you actually do, and add more later.
+⭐ **You do not need all forty-four.** Start with four or five that match what you actually do, and
+add more later. Each one works on its own — see below.
 
 ### On a Team or Enterprise plan
 
@@ -48,8 +37,8 @@ available to everyone, so nobody else has to install anything.
 
 Faster, because all forty-four go in at once.
 
-Copy the folders inside **`1-course-skills/`** and **`2-worksheet-skills/`** into `.claude/skills/` — either in a project, or in
-`~/.claude/skills/` to have them everywhere:
+Copy the `aca-*` folders into `.claude/skills/` — either in a project, or in `~/.claude/skills/`
+to have them everywhere:
 
 ```
 your-project/
@@ -60,10 +49,9 @@ your-project/
         └── … 42 more
 ```
 
-⚠️ **Copy the `aca-*` folders themselves, not the two folders around them.** Skills are found at
-exactly `.claude/skills/<skill-name>/SKILL.md`. Nested one level too deep — as
-`.claude/skills/1-course-skills/aca-101-tribe-building/` — they load silently as nothing, with no
-error. Claude Code has no 200-file limit, so all forty-four go in together.
+⚠️ **Keep them flat.** Skills are found at exactly `.claude/skills/<skill-name>/SKILL.md`. Nested
+one level too deep — as `.claude/skills/ACA-Skills-main/aca-101-tribe-building/` — they load
+silently as nothing, with no error.
 
 Start a session and ask *"which ACA skills do I have?"* — you should get **44**.
 
@@ -75,7 +63,7 @@ This is the part people expect to be complicated, and it is not.
 
 - **No dependencies.** No skill needs another skill installed to work.
 - **No order.** There is nothing to run first.
-- **No separate document to upload.** Everything a skill needs is inside its own folder.
+- **No separate document to upload.** Everything a skill needs is in its one file.
 
 Skills do mention each other — *"for that job, use `aca-402-key-metrics`"* — but only as a
 signpost. If you do not have the one it names, nothing breaks; you just do not have that one.
@@ -126,11 +114,10 @@ see. A missing input gets a question, not a guess.
 
 | | |
 |---|---|
-| `1-course-skills/` | 27 skills, one per ACA course. 146 files |
-| `2-worksheet-skills/` | 17 skills, one per worksheet that produces something. 63 files |
+| `aca-*/SKILL.md` | The 44 skills. One folder each, one self-contained file inside |
 | `SKILLS-README.md` | The full index: every skill, what it does, what it needs |
 
-Every skill carries a `reference/provenance.md` saying where its material came from and who taught
+Every skill ends with a **Provenance** section saying where its material came from and who taught
 it. Quotations are verbatim from ACA's own recordings and worksheets — including the transcription
 slips, which are flagged rather than silently corrected, so a quote can always be checked against
 the source.
