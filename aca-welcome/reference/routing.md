@@ -18,7 +18,7 @@ a name, try it, and nothing happens.
 
 | If they want | Course | Faculty | Use |
 |---|---|---|---|
-| The curriculum, where to start, what a course code means | 100 | Mirella Crespi | `aca-100-course-outline` (this skill) |
+| The curriculum, where to start, what a course code means | 100 | Mirella Crespi | `aca-welcome` (this skill) |
 | Strategy before tactics: tribes, smallest viable audience, permission, trust | 101 | Seth Godin | `aca-101-tribe-building` |
 | Why creative strategy exists now, consumer psychology, direct response | 102 | Mirella Crespi | `aca-102-state-of-paid-social` |
 | How to read and reverse-engineer an ad: the building blocks | 103 | Mirella Crespi | `aca-103-creative-fundamentals` |

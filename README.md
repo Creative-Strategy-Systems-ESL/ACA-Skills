@@ -31,7 +31,7 @@ everywhere:
 your-project/
 └── .claude/
     └── skills/
-        ├── aca-100-course-outline/
+        ├── aca-welcome/
         ├── aca-101-tribe-building/
         └── … 42 more
 ```
@@ -73,7 +73,7 @@ actually do. Every skill works on its own, so there is no wrong subset —
 
 | Skill | For |
 |---|---|
-| `aca-100-course-outline` | The map. Which course covers what |
+| `aca-welcome` | **Start here.** What ACA is, how it runs, and which skill to open next |
 | `aca-103-creative-fundamentals` | The building blocks every ad is made of |
 | `aca-402-key-metrics` | Reading the numbers without overclaiming |
 | `aca-build-angles` | Angles for a real offer, across all ten types |
@@ -93,7 +93,7 @@ If you do not have the one it names, nothing breaks; you just do not have that o
 Where two skills carry the same material that is deliberate. `aca-103-creative-fundamentals` and
 `aca-build-angles` both hold the ten angle types **precisely so** neither depends on the other.
 
-⚠️ **One exception.** `aca-100-course-outline` is the front door: its job is pointing you at the
+⚠️ **One exception.** `aca-welcome` is the front door: its job is pointing you at the
 right course, so on its own it will name skills you have not installed. Install it alongside others.
 
 ---

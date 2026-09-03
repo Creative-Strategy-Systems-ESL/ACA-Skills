@@ -3,7 +3,7 @@
 Claude skills built from the Ad Creative Academy curriculum. Each one carries a course's method so
 Claude can teach it, run it, or both, without anyone having to re-read the source material.
 
-**Forty-four skills.** Twenty-seven course skills and seventeen worksheet skills. ⭐ **Every course in the
+**Forty-four skills.** One welcome skill, twenty-six course skills and seventeen worksheet skills. ⭐ **Every course in the
 programme now has a skill: the 100- through 800-Levels are complete.** Only the 900-Level certification
 has nothing, because no material for it exists. The coverage table below says what each level holds.
 
@@ -25,7 +25,7 @@ working in. They become available in that project only.
 your-project/
 └── .claude/
     └── skills/
-        ├── aca-100-course-outline/
+        ├── aca-welcome/
         └── ...
 ```
 
@@ -101,7 +101,7 @@ produce that course's artifact.
 
 | | Skill | Course | Faculty | Kind |
 |---|---|---|---|---|
-| ✅ | `aca-100-course-outline` | 100 · Welcome & Course Outline | Mirella Crespi | teach |
+| ✅ | `aca-welcome` | 100 · Welcome to Ad Creative Academy | Mirella Crespi | teach |
 | ✅ | `aca-101-tribe-building` | 101 · Tribe Building on Social Media | Seth Godin | teach |
 | ✅ | `aca-102-state-of-paid-social` | 102 · State of Paid Social & Consumer Psychology | Mirella Crespi | teach + do |
 | ✅ | `aca-103-creative-fundamentals` | 103 · Creative Fundamentals | Mirella Crespi | teach + do |
@@ -197,7 +197,9 @@ skill to produce a worksheet gets you taught first. Both work; the routing above
 
 ### Start here
 
-`aca-100-course-outline` is the front door. It holds the full curriculum map (all 26 courses, who
+`aca-welcome` is the front door — open it first. It welcomes a new student, says how the
+programme runs, explains what the skills are and how to use them, then routes onward. It holds the
+full curriculum map (all 26 courses, who
 teaches them, how long they run, what modules they contain) and routes to whichever skill fits the
 question. If you are not sure which skill you want, ask it.
 
@@ -218,7 +220,7 @@ sent no material at all.
 | 800 · AI-Powered Creative Strategy | 801, 802, 803 | ✅ **complete — all 3 course skills and 2 worksheet skills** |
 | 900 · Certification | exam, capstone | not yet |
 
-`aca-100-course-outline` knows the whole curriculum, including the levels with no skills yet, so it
+`aca-welcome` knows the whole curriculum, including the levels with no skills yet, so it
 can still tell you which course covers a topic and who teaches it.
 
 ## A note on course numbers
@@ -226,5 +228,5 @@ can still tell you which course covers a topic and who teaches it.
 ACA renumbered its courses for launch, and material made before the renumber uses the old codes. A
 bare "course 301" can mean two different courses depending on which numbering someone has in front
 of them. These skills use the **current shipping** numbers throughout, and
-`aca-100-course-outline` explains the overlaps. When a number is ambiguous, naming the instructor
+`aca-welcome` explains the overlaps. When a number is ambiguous, naming the instructor
 settles it, because the faculty did not change when the numbers did.

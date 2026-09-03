@@ -1,16 +1,30 @@
 ---
-name: aca-100-course-outline
-description: The map of Ad Creative Academy's certification curriculum - all 26 courses across 10 levels (000 to 900), who teaches each one, how long it runs, what it covers, and which worksheets ship with it. Use this whenever someone asks what Ad Creative Academy covers, where to start, how long the programme takes, what order to work through it in, or which course covers a specific topic (hooks, personas, competitor research, creative testing, UGC talent, sound-first ads, AI visuals, sprint planning). Use it too whenever a bare ACA course code comes up (101, 302, 402, 703) and you need to know what it actually refers to, because ACA renumbered its courses and older material disagrees. Reach for this before answering any "which part of the course teaches X" question from memory.
+name: aca-welcome
+description: The welcome desk for Ad Creative Academy - what the programme is, how it runs, what every course covers, and which of the aca-* skills to open for the job in front of you. Start here. Use this whenever someone is new to ACA or has just enrolled, asks what the programme covers, where to begin, what order to work through it in, how long it takes, or what enrollment includes. Use it when someone asks what the skills are, which one to use, or how to use them at all. Use it when they ask which course covers a topic - hooks, personas, competitor research, creative testing, UGC talent, sound-first ads, AI visuals, sprint planning. And use it whenever a bare ACA course code comes up (101, 302, 402, 703), because ACA renumbered its courses and older material still carries the old numbers. Reach for this before answering any "what does ACA teach" or "which part covers X" question from memory.
 ---
 
-# Ad Creative Academy: the curriculum map
+# Welcome to Ad Creative Academy
 
-Ad Creative Academy (ACA) bills itself as the first professional certification for creative
-strategy. **26 numbered courses, 89 modules, 13 faculty, 17h 20m of video, across 10 levels
-(000 to 900), designed to be completed in 2 to 3 months.**
+⭐ **This is the front door. Open it first.** ACA's own name for Course 100 is *"Welcome to Ad
+Creative Academy | Course Outline"*, and this skill is both halves of that: the welcome, and the
+map of where everything lives.
 
-This skill is the front door. It answers three kinds of question, and the third is the one people
-most often get wrong.
+Ad Creative Academy bills itself as the first professional certification for creative strategy.
+**26 numbered courses, 89 modules, 13 faculty, 17h 20m of video, across 10 levels (000 to 900),
+designed to be completed in 2 to 3 months.**
+
+## Open with a welcome, then route
+
+Someone arriving here is usually new, so the first reply does three things and then stops:
+
+1. **Welcome them and say what the programme is** — in Mirella Crespi's framing, from
+   `reference/why-the-role.md`, not a generic one.
+2. **Say how it runs** — 10 levels in dependency order, 2 to 3 months, from
+   `reference/study-plan.md`.
+3. **Hand them one next thing to open**, not a tour. A specific course or skill beats a list.
+
+⛔ **Do not recite all 26 courses at someone who just said hello.** The curriculum map is there to
+answer a question, not to be read aloud. Ask what they want to get done and route from the answer.
 
 ## What this skill needs from you
 
@@ -27,6 +41,12 @@ covers hooks" deserves an answer, not a form.
 Answer first, always. Offer these only where a tailored path genuinely changes the reply, which in
 practice is "where do I start" and "what order should I do this in". Someone asking what Course 402
 is should get told what Course 402 is.
+
+## "What are these skills and how do I use them?"
+
+Read `reference/using-the-skills.md`. It covers the three kinds of skill, how to tell them apart
+from the name alone, and what actually happens when each one runs. ⭐ **This is the question new
+students ask that the curriculum map cannot answer**, so route it here rather than to a course.
 
 ## 1. "What is this programme and why does it exist?"
 
@@ -77,21 +97,24 @@ name that does nothing is worse than just teaching them, because they try it and
 
 ## How to work through it
 
-**This skill routes; it does not teach a course.** The sequence is a routing procedure, and step 3 is the one
-that most often goes wrong.
+**This skill welcomes and routes; it does not teach a course.** The sequence is a routing procedure, and
+step 4 is the one that most often goes wrong.
 
-1. **Establish what they actually want** — the programme shape, a starting point, or one specific topic. The
-   three questions below cover each.
-2. **Resolve any course code against `reference/curriculum-map.md`** before answering. ⛔ ACA renumbered its
+1. **If they are arriving rather than asking, welcome them first** — what the programme is, how it runs,
+   then one thing to open. Three sentences, not a curriculum dump.
+2. **Establish what they actually want** — the programme shape, a starting point, one specific topic, or
+   what the skills are. The four questions below cover each.
+3. **Resolve any course code against `reference/curriculum-map.md`** before answering. ⛔ ACA renumbered its
    courses, so a bare code from older material may not mean what it appears to.
-3. ⛔ **Check the target skill is installed before naming it**, per `reference/routing.md`. Skills are copied
+4. ⛔ **Check the target skill is installed before naming it**, per `reference/routing.md`. Skills are copied
    in folder by folder and a partial copy is normal. **Sending someone to a skill that is not there is worse
    than teaching them directly**, because they get a name, try it, and nothing happens.
-4. **Hand off, or teach from the map.** If the skill is present, name it. If not, answer from
-   `reference/curriculum-map.md` — the course, the faculty, the modules — and say the dedicated skill is not
-   installed.
-5. **Use `reference/study-plan.md`** when the question is order or duration rather than content.
-6. **Check they leave with a next action**, not a list. A specific course or skill to open beats a tour of
+5. **Hand off, or teach from the map.** If the skill is present, name it and say what it will do. If not,
+   answer from `reference/curriculum-map.md` — the course, the faculty, the modules — and say the dedicated
+   skill is not installed.
+6. **Use `reference/study-plan.md`** when the question is order or duration rather than content, and
+   `reference/using-the-skills.md` when it is about the skills themselves.
+7. **Check they leave with a next action**, not a list. A specific course or skill to open beats a tour of
    the curriculum.
 
 ## Answering well
@@ -122,5 +145,6 @@ once, claiming Courses 202 and 210 had no recording when both did.
 | `reference/curriculum-map.md` | Any question about a specific course, code, level, faculty member, runtime or module. The authority on all of these |
 | `reference/why-the-role.md` | "What is ACA?", "why does creative strategy matter?", anything about the programme's premise |
 | `reference/study-plan.md` | "Where do I start?", "how long?", "what do I get?", "what order?" |
+| `reference/using-the-skills.md` | "What are these skills?", "which one do I use?", "how do I use them?" — the three kinds, and what happens when one runs |
 | `reference/routing.md` | Handing off to another `aca-*` skill |
 | `reference/provenance.md` | Citing the source of this material |
