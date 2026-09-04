@@ -19,19 +19,11 @@ to do this if you have never added a skill before.
 
 ## How to add them
 
-### Do this first — once
-
-In Claude, go to **Settings → Capabilities** and turn on **Code execution and file creation.**
-
-Skip this and the skills will upload but never actually run.
-
-### Then, for each skill you want
-
 1. **Download the folder** from the link above, and **unzip it**.
 2. **Open the `Skills` folder.** It holds 44 files, one per skill.
 3. **In Claude, go to Settings → Customize → Skills → Add → Upload skill.**
 4. **Drag in one file.** Claude runs a security check that takes a minute or two.
-5. **Repeat** for the next one.
+5. **Repeat** for the next one. That is it — no setup, nothing to configure.
 
 ⛔ **One file at a time.** You cannot upload the folder, and you cannot upload them all at once.
 That is Claude's own rule — its uploader accepts exactly one skill per file.
@@ -85,7 +77,7 @@ something.
 | What you see | What to do |
 |---|---|
 | The upload is rejected | You are probably uploading the folder rather than a file inside it. Use the files inside `Skills` exactly as they came |
-| The skill is listed but nothing happens | You skipped the setting. Turn on **Code execution and file creation** in Settings → Capabilities |
+| The skill is listed but nothing happens | Check **Settings → Capabilities** has **Code execution and file creation** on. It is the only setting these need |
 | Claude does not use the skill | Name it directly — *"use aca-402-key-metrics"* — instead of describing the problem |
 | It names a skill you do not have | Expected. `aca-welcome` knows all 44 and points at them whether or not you installed them. Add the one it named, or ignore it |
 
