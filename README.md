@@ -19,7 +19,7 @@ to do this if you have never added a skill before.
 
 ## How to add them
 
-1. **Download the folder** from the link above, and **unzip it**.
+1. **Download this repo** — the green **Code** button at the top → **Download ZIP** — and **unzip it**.
 2. **Open the `Skills` folder.** It holds 44 files, one per skill.
 3. **In Claude, go to Settings → Customize → Skills → Add → Upload skill.**
 4. **Drag in one file.** Claude runs a security check that takes a minute or two.
