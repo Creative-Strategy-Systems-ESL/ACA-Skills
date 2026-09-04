@@ -87,7 +87,6 @@ something.
 | | |
 |---|---|
 | `Skills/` | **The 44 files you upload.** One per skill |
-| `aca-*/` | The same skills unpacked, if you want to read them |
 | `SKILLS-README.md` | The full index: every skill, what it does, what it needs, what it returns |
 
 Every skill carries a `reference/provenance.md` saying where its material came from and who taught
